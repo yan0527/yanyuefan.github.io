@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="typora中Latex公式格式（1）"><meta name="keywords" content="Latex"><meta name="author" content="Moon"><meta name="copyright" content="Moon"><title>typora中Latex公式格式（1） | 小帆的博客</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script><meta name="generator" content="Hexo 4.2.1"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#基础"><span class="toc-text">基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#公式输入"><span class="toc-text">公式输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编号"><span class="toc-text">编号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#输入"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#符号"><span class="toc-text">符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#成正比"><span class="toc-text">成正比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集合"><span class="toc-text">集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分式"><span class="toc-text">分式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#根式"><span class="toc-text">根式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#求和和连乘"><span class="toc-text">求和和连乘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#极限"><span class="toc-text">极限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#积分"><span class="toc-text">积分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#波浪线"><span class="toc-text">波浪线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#求导"><span class="toc-text">求导</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#垂直、平行"><span class="toc-text">垂直、平行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#希腊字母"><span class="toc-text">希腊字母</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#矩阵"><span class="toc-text">矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对齐"><span class="toc-text">对齐</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Moon</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">10</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">7</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">6</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">友链</div><a class="author-info-links__name text-center" href="https://yokaimeow.com/" target="_blank" rel="noopener">yokaimeow</a><a class="author-info-links__name text-center" href="http://zrainy.top/" target="_blank" rel="noopener">zrainy</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(http://image.biaobaiju.com/uploads/20181223/20/1545567668-wtadReSbWc.png)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">小帆的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">首页</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/about">关于我</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">typora中Latex公式格式（1）</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-05-29</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/tool/">tool</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>最近做笔记，推荐<a href="https://www.typora.io/" target="_blank" rel="noopener">typora</a>，以下是常用Latex公式格式</p>
+<p>本文整理自jianli_Alex先生的<a href="https://www.cnblogs.com/liangjianli/tag/Markdown/" target="_blank" rel="noopener">博客</a></p>
+ <a id="more"></a>
+
+<hr>
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="公式输入"><a href="#公式输入" class="headerlink" title="公式输入"></a>公式输入</h2><ul>
+<li>$ $ 行内</li>
+<li>$$ $$  单行</li>
+<li>$$a \ b$$  换行 <code>\\</code></li>
+<li>$\cdots$  <code>\cdots</code></li>
+</ul>
+<h2 id="编号"><a href="#编号" class="headerlink" title="编号"></a>编号</h2><ul>
+<li><p>手动<br>$$<br>a+b=4 \tag{1}<br>$$</p>
+</li>
+<li><p>自动<br>$$<br>\begin{equation} a^2 + b^2 = c^2 \end{equation}<br>$$</p>
+</li>
+<li><p>等式对齐</p>
+</li>
+</ul>
+<p>$$<br>\begin{align}    x +  y = 1\    2x + y \neq 1\    3x +4y \leq 2\    4x \geq y\end{align}<br>$$</p>
+<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><ul>
+<li><p>分开输入    {split}参数<br>$$<br>\begin{equation}</p>
+<pre><code>\begin{split}
+    (x + y)(x + 4y) &amp; = x^2 + 4xy + xy + 4y^2\\
+            &amp; = x^2 +5xy + 4y^2
+\end{split}</code></pre><p>\end{equation}<br>$$</p>
+</li>
+<li><p>分类输入    {cases}参数<br>$$<br>\begin{equation}    a_{i1}A_{j1} + a_{i2}A_{j2} + \cdots + a_{in}A_{jn} =     \begin{cases}        \begin{vmatrix}A\end{vmatrix}，&amp; i =j\        0, &amp; i \neq j    \end{cases}\end{equation}<br>$$</p>
+</li>
+</ul>
+<h2 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h2><ul>
+<li>$\neq$ <code>\neq</code></li>
+<li>$\leq$ <code>\leq</code></li>
+<li>$\geq$ <code>\geq</code></li>
+<li>使用<code>^</code>表示上标，使用<code>_</code>表示下标，当上下标的有多个（2个及以上）字符时，要用<code>{}</code>括起来。</li>
+<li>常用的用法：<ul>
+<li>$$\bar X$$(X拔)的表示方法是：<code>$\bar X$</code>，这个通常是用来表示变量的均值</li>
+<li>$$\hat Y$$(Y帽)的表示方法是：<code>$\hat Y$</code>，这个通常是用来表示变量的预测值</li>
+<li>$$\underline X$$的表示方式是：<code>$\underline X$</code>，可以用来表示下限</li>
+<li>$$\widetilde X$$的表示方式是：<code>$\widetilde X$</code></li>
+</ul>
+</li>
+<li>符号放在文本正下方<ul>
+<li>使用<code>$\underset$</code>，有时也可以使用<code>$\limits$</code></li>
+<li>$$\hat \beta = \underset{\beta}{\arg \min} L(\beta)$$ </li>
+<li>$$\hat \beta = \arg \min \limits_{\beta} L(\beta)$$</li>
+</ul>
+</li>
+</ul>
+<h3 id="成正比"><a href="#成正比" class="headerlink" title="成正比"></a>成正比</h3><ul>
+<li>使用<code>$\propto$</code>来表示<ul>
+<li>$f(\beta|X) \propto f(\beta) f(X|\beta)$</li>
+</ul>
+</li>
+</ul>
+<h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--真包含--&gt; </span><br><span class="line">$$\subset$$ </span><br><span class="line">&lt;!--包含--&gt; </span><br><span class="line">$$\subseteq$$ </span><br><span class="line">&lt;!--属于和不属于--&gt; </span><br><span class="line">$$\in$$ $$\notin$$ </span><br><span class="line">&lt;!--交集和并集--&gt; </span><br><span class="line">$$\cap$$ </span><br><span class="line">$$\cup$$ </span><br><span class="line">&lt;!--其他--&gt; </span><br><span class="line">$$\mid$$ </span><br><span class="line">$$\supset$$</span><br></pre></td></tr></table></figure>
+
+<!--真包含--> $$\subset$$ 
+
+<!--包含--> $$\subseteq$$ 
+
+<!--属于和不属于--> $$\in$$ $$\notin$$ 
+
+<!--交集和并集--> $$\cap$$ $$\cup$$ 
+
+<!--其他--> $$\mid$$  $$\supset$$
+
+<h3 id="分式"><a href="#分式" class="headerlink" title="分式"></a>分式</h3><p><code>\frac{}{}</code>来表示分式，其中第一个<code>{}</code>表示分子，第二个<code>{}</code>表示分母</p>
+<p>$$\frac{1}{2}$$</p>
+<h3 id="根式"><a href="#根式" class="headerlink" title="根式"></a>根式</h3><p>使用<code>sqrt[]{}</code>来表示分式，其中<code>[]</code>表示开方的次数，<code>{}</code>表示被开方的公式</p>
+<p>$$\sqrt[3]{a+b}$$</p>
+<h3 id="求和和连乘"><a href="#求和和连乘" class="headerlink" title="求和和连乘"></a>求和和连乘</h3><ul>
+<li><p>求和 通常使用∑来表示，添加上下标<code>\sum_{}^{}</code></p>
+<p>$$\sum_{n=1}^{N}x_n$$</p>
+</li>
+<li><p>连乘 以<code>\prod_{}^{}</code>的形式表示$$\prod_{i = 1}^{N}x_i$$</p>
+<ul>
+<li>$\displaystyle\prod_{i = 1}^{n}x_i$  <code>\displaystyle</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h3><ul>
+<li>使用<code>\lim</code> $\displaystyle\lim_{x \rightarrow + \infty}{\frac{sinx}{x}}$<ul>
+<li>右箭头→的表示方式为<code>$\rightarrow$</code>，左箭头←的表示方式是<code>$\leftarrow$</code></li>
+<li>正无穷+∞的表示方式为<code>$+ \infty$</code>，负无穷−∞的表示方式是<code>$- \infty$</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h3><ul>
+<li><code>\int_{}^{}</code><ul>
+<li>$$\int_{-\infty}^{+\infty}x^2$$</li>
+</ul>
+</li>
+<li>正态分布的分布函数<ul>
+<li>$$F(x) = \int_{- \infty}^{+ \infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-(\frac{x-\mu}{\sigma})^2} dx$$</li>
+</ul>
+</li>
+</ul>
+<h3 id="波浪线"><a href="#波浪线" class="headerlink" title="波浪线"></a>波浪线</h3><ul>
+<li>使用<code>$\sim$</code>来表示波浪线<ul>
+<li>$\sim$</li>
+</ul>
+</li>
+<li>$\varepsilon \sim N(0, \sigma^2I_n)$</li>
+</ul>
+<h3 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h3><ul>
+<li>使用<code>$\mathrm{d}$</code>来表示求导符号，<code>$\partial$</code>来表示求偏导<br>$$<br>\begin{align}<br>\frac {\mathrm{d}L(\beta)}{d\beta}\<!--直接用d来表示求导符的效果-->\\
+\frac {dL(\beta)}{d\beta}\<!--偏导-->\\
+\frac {\partial L(\beta_0, \beta_1)}{\partial \beta_0}<br>\end{align}<br>$$</li>
+</ul>
+<h3 id="垂直、平行"><a href="#垂直、平行" class="headerlink" title="垂直、平行"></a>垂直、平行</h3><ul>
+<li>垂直：使用<code>\perp</code>，效果为$\perp$</li>
+<li>平行：可以直接用<code>//</code>或$//$，也可以使用 $\parallel   $<code>$\parallel$</code></li>
+</ul>
+<h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><table>
+<thead>
+<tr>
+<th align="center">希腊字母</th>
+<th align="center">对应的代码</th>
+<th align="center">希腊字母</th>
+<th align="center">对应的代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$\alpha$</td>
+<td align="center"><code>$\alpha$</code></td>
+<td align="center">$\mu$</td>
+<td align="center"><code>$\mu$</code></td>
+</tr>
+<tr>
+<td align="center">$\beta$</td>
+<td align="center"><code>$\beta$</code></td>
+<td align="center">$\sigma$</td>
+<td align="center"><code>$\sigma$</code></td>
+</tr>
+<tr>
+<td align="center">$\gamma$</td>
+<td align="center"><code>$\gamma$</code></td>
+<td align="center">$\varepsilon$</td>
+<td align="center"><code>$\varepsilon$</code></td>
+</tr>
+<tr>
+<td align="center">$\theta$</td>
+<td align="center"><code>$theta$</code></td>
+<td align="center">$\chi$</td>
+<td align="center"><code>$\chi$</code></td>
+</tr>
+<tr>
+<td align="center">$\zeta$</td>
+<td align="center"><code>$\zeta$</code></td>
+<td align="center">$\tau$</td>
+<td align="center"><code>$\tau$</code></td>
+</tr>
+<tr>
+<td align="center">$\eta$</td>
+<td align="center"><code>$\eta$</code></td>
+<td align="center">$\rho$</td>
+<td align="center"><code>$\rho$</code></td>
+</tr>
+<tr>
+<td align="center">$\xi$</td>
+<td align="center"><code>$\xi$</code></td>
+<td align="center">$\psi$</td>
+<td align="center"><code>$\psi$</code></td>
+</tr>
+<tr>
+<td align="center">$\pi$</td>
+<td align="center"><code>$\pi$</code></td>
+<td align="center">$\phi$</td>
+<td align="center"><code>$\phi$</code></td>
+</tr>
+</tbody></table>
+<h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><ul>
+<li><p><code>array</code>参数</p>
+<ul>
+<li><p>{ccc}是指元素的对齐方法（居中），此外还有<code>l</code>和<code>r</code>的参数可选，分别表示左和右</p>
+</li>
+<li><p>$$<br>\begin{array}{ccc}</p>
+<pre><code>1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1\\</code></pre><p>\end{array}<br>$$</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>$$<br>\left(<pre><code>\begin{array}{ccc}
+1 &amp; 0 &amp; 0000\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1\\
+\end{array}</code></pre>\right)<br>$$</li>
+</ul>
+<ul>
+<li><p>简化 <code>pmatrix</code>(带<code>()</code>的矩阵)、<code>bmatrix</code>(带<code>[]</code>的矩阵)、<code>vmatrix</code>(行列式)</p>
+<p>$$<br>\begin{pmatrix}<br>  1 &amp; 0 &amp; 0\<br>  0 &amp; 1 &amp; 0\<br>  0 &amp; 0 &amp; 1\<br>\end{pmatrix}<br>$$</p>
+</li>
+</ul>
+<ul>
+<li><p>复杂矩阵</p>
+<ul>
+<li>$$<br>A = <pre><code>\begin{pmatrix}
+    a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
+    a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
+    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+    a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\
+\end{pmatrix}</code></pre>$$</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>横排列的点 ⋯ 用<code>$\cdots$</code>表示，列排列的点 ⋮ 用<code>$\vdots$</code>表示，斜排列的点 ⋱ 用<code>$\ddots$</code>表示</li>
+</ul>
+<h2 id="对齐"><a href="#对齐" class="headerlink" title="对齐"></a>对齐</h2><ul>
+<li><p>array是将一些事物对齐显示的阵列</p>
+</li>
+<li><p>$$<br>\begin{array}{l}</p>
+<pre><code>(A)\quad 2234 &amp; \hspace{4cm}(B)\quad 3\\
+(B)\quad 2 &amp; \hspace{4cm}(D)\quad 1</code></pre><p>\end{array}<br>$$</p>
+<ul>
+<li><code>\quad</code>和<code>\hspace{}</code>都是表示空格，但是空的个数不同</li>
+</ul>
+</li>
+</ul>
+</div></article><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Latex/">Latex</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/2020/05/24/KaoYanJingYan-QQ/"><span>转载！复旦Q神致计算机跨考者</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(http://image.biaobaiju.com/uploads/20181223/20/1545567668-wtadReSbWc.png)"><div class="layout" id="footer"><div class="copyright">&copy;2020 By Moon</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="footer_custom_text">welcome to my <a href="https://yanyuefan.github.io">blog</a>!</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
