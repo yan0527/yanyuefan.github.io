@@ -154,12 +154,7 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">	\frac &#123;\mathrm&#123;d&#125;L(\beta)&#125;&#123;d\beta&#125;\\</span><br><span class="line">	&lt;!--直接用d来表示求导符的效果--&gt;\\</span><br><span class="line">	\frac &#123;dL(\beta)&#125;&#123;d\beta&#125;\\</span><br><span class="line">	&lt;!--偏导--&gt;\\</span><br><span class="line">	\frac &#123;\partial L(\beta_0, \beta_1)&#125;&#123;\partial \beta_0&#125;</span><br><span class="line">\end&#123;align&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
 
-
-<p>$$<br>\begin{align}<br>\frac {\mathrm{d}L(\beta)}{d\beta}\</p>
-<!--直接用d来表示求导符的效果-->\\
-<p>\frac {dL(\beta)}{d\beta}\</p>
-<!--偏导-->\\
-<p>\frac {\partial L(\beta_0, \beta_1)}{\partial \beta_0}<br>\end{align}<br>$$</p>
+<p><img src="/image/Latex_qiudao.jpg" alt=""></p>
 <h3 id="垂直、平行"><a href="#垂直、平行" class="headerlink" title="垂直、平行"></a>垂直、平行</h3><ul>
 <li>垂直：使用<code>\perp</code>，效果为$\perp$</li>
 <li>平行：可以直接用<code>//</code>或$//$，也可以使用 $\parallel   $<code>$\parallel$</code></li>
@@ -227,10 +222,7 @@
 <ul>
 <li><p>{ccc}是指元素的对齐方法（居中），此外还有<code>l</code>和<code>r</code>的参数可选，分别表示左和右</p>
 </li>
-<li><p>$$<br>\begin{array}{ccc}</p>
-<pre><code>1 &amp; 0 &amp; 0\\
-0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 1\\</code></pre><p>\end{array}<br>$$</p>
+<li><p><img src="/image/Latex_1.jpg" alt=""></p>
 </li>
 </ul>
 </li>
@@ -240,13 +232,8 @@
 
 
 <ul>
-<li><p>$$<br>\left(</p>
-<pre><code>\begin{array}{ccc}
-1 &amp; 0 &amp; 0000\\
-0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 1\\
-\end{array}</code></pre><p>\right)<br>$$</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\left(    </span><br><span class="line">	\begin&#123;array&#125;&#123;ccc&#125;</span><br><span class="line">    	1 &amp; 0 &amp; 0000\\</span><br><span class="line">        0 &amp; 1 &amp; 0\\</span><br><span class="line">        0 &amp; 0 &amp; 1\\</span><br><span class="line">    \end&#123;array&#125;</span><br><span class="line">\right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<li><p><img src="/image/Latex_2.jpg" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\left(    </span><br><span class="line">	\begin&#123;array&#125;&#123;ccc&#125;</span><br><span class="line">    	1 &amp; 0 &amp; 0000\\</span><br><span class="line">        0 &amp; 1 &amp; 0\\</span><br><span class="line">        0 &amp; 0 &amp; 1\\</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">\right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
 
 
 
@@ -255,7 +242,7 @@
 <ul>
 <li>简化 <code>pmatrix</code>(带<code>()</code>的矩阵)、<code>bmatrix</code>(带<code>[]</code>的矩阵)、<code>vmatrix</code>(行列式)</li>
 </ul>
-<p>$$<br>  \begin{pmatrix}<br>      1 &amp; 0 &amp; 0\<br>      0 &amp; 1 &amp; 0\<br>      0 &amp; 0 &amp; 1\<br>  \end{pmatrix}<br>$$</p>
+<p><img src="/image/Latex_3.jpg" alt=""></p>
   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;pmatrix&#125;</span><br><span class="line">	1 &amp; 0 &amp; 0\\</span><br><span class="line">    0 &amp; 1 &amp; 0\\</span><br><span class="line">    0 &amp; 0 &amp; 1\\</span><br><span class="line">\end&#123;pmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
 
 
@@ -263,14 +250,8 @@
 <ul>
 <li><p>复杂矩阵</p>
 <ul>
-<li><p>$$<br>A = </p>
-<pre><code>\begin{pmatrix}
-    a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
-    a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
-    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
-    a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\
-\end{pmatrix}</code></pre><p>$$</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">A &#x3D;     </span><br><span class="line">\begin&#123;pmatrix&#125;        </span><br><span class="line">	a_&#123;11&#125; &amp; a_&#123;12&#125; &amp; \cdots &amp; a_&#123;1n&#125;\\</span><br><span class="line">    a_&#123;21&#125; &amp; a_&#123;22&#125; &amp; \cdots &amp; a_&#123;2n&#125;\\</span><br><span class="line">    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\</span><br><span class="line">    a_&#123;n1&#125; &amp; a_&#123;n2&#125; &amp; \cdots &amp; a_&#123;nn&#125;\\</span><br><span class="line">\end&#123;pmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<li><p><img src="/image/Latex_4.jpg" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">A &#x3D;     </span><br><span class="line">\begin&#123;pmatrix&#125;        </span><br><span class="line">	a_&#123;11&#125; &amp; a_&#123;12&#125; &amp; \cdots &amp; a_&#123;1n&#125;\\</span><br><span class="line">    a_&#123;21&#125; &amp; a_&#123;22&#125; &amp; \cdots &amp; a_&#123;2n&#125;\\</span><br><span class="line">    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\</span><br><span class="line">a_&#123;n1&#125; &amp; a_&#123;n2&#125; &amp; \cdots &amp; a_&#123;nn&#125;\\</span><br><span class="line">\end&#123;pmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
 
 
 
@@ -284,9 +265,7 @@
 <h2 id="对齐"><a href="#对齐" class="headerlink" title="对齐"></a>对齐</h2><ul>
 <li><p>array是将一些事物对齐显示的阵列</p>
 </li>
-<li><p>$$<br>\begin{array}{l}</p>
-<pre><code>(A)\quad 2234 &amp; \hspace{4cm}(B)\quad 3\\
-(B)\quad 2 &amp; \hspace{4cm}(D)\quad 1</code></pre><p>\end{array}<br>$$</p>
+<li><p><img src="/image/Latex_5.jpg" alt=""></p>
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;array&#125;&#123;l&#125;</span><br><span class="line">	(A)\quad 2234 &amp; \hspace&#123;4cm&#125;(B)\quad 3\\</span><br><span class="line">    (B)\quad 2 &amp; \hspace&#123;4cm&#125;(D)\quad 1</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
