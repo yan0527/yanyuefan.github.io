@@ -13,29 +13,48 @@
 
 <hr>
 <h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="公式输入"><a href="#公式输入" class="headerlink" title="公式输入"></a>公式输入</h2><ul>
-<li>$ $ 行内</li>
-<li>$$ $$  单行</li>
+<li><code>$ $</code> 行内</li>
+<li><code>$$ $$</code> 单行</li>
 <li>$$a \ b$$  换行 <code>\\</code></li>
 <li>$\cdots$  <code>\cdots</code></li>
 </ul>
 <h2 id="编号"><a href="#编号" class="headerlink" title="编号"></a>编号</h2><ul>
-<li><p>手动<br>$$<br>a+b=4 \tag{1}<br>$$</p>
+<li><p>手动<code>tag{n}</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line"> a+b&#x3D;4 \tag&#123;1&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>$$<br>a+b=4 \tag{1}<br>$$</p>
 </li>
-<li><p>自动<br>$$<br>\begin{equation} a^2 + b^2 = c^2 \end{equation}<br>$$</p>
-</li>
-<li><p>等式对齐</p>
+<li><p>自动<code>equation</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line"> \begin&#123;equation&#125; </span><br><span class="line"> 	a^2 + b^2 &#x3D; c^2 </span><br><span class="line"> \end&#123;equation&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
 </li>
 </ul>
+<p>  $$<br>  \begin{equation} a^2 + b^2 = c^2 \end{equation}<br>  $$</p>
+<ul>
+<li>等式对齐<code>align</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line"> \begin&#123;align&#125;    </span><br><span class="line">     x +  y &#x3D; 1\\</span><br><span class="line">     2x + y \neq 1\\    </span><br><span class="line">     3x +4y \leq 2\\    </span><br><span class="line">     4x \geq y</span><br><span class="line"> \end&#123;align&#125;</span><br><span class="line"> $$</span><br></pre></td></tr></table></figure>
+
+
 <p>$$<br>\begin{align}    x +  y = 1\    2x + y \neq 1\    3x +4y \leq 2\    4x \geq y\end{align}<br>$$</p>
 <h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><ul>
-<li><p>分开输入    {split}参数<br>$$<br>\begin{equation}</p>
-<pre><code>\begin{split}
-    (x + y)(x + 4y) &amp; = x^2 + 4xy + xy + 4y^2\\
-            &amp; = x^2 +5xy + 4y^2
-\end{split}</code></pre><p>\end{equation}<br>$$</p>
+<li><p>分开输入    {split}参数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;equation&#125;    </span><br><span class="line">\begin&#123;split&#125;</span><br><span class="line">    (x + y)(x + 4y) &amp; &#x3D; x^2 + 4xy + xy + 4y^2\\</span><br><span class="line">    &amp; &#x3D; x^2 +5xy + 4y^2    </span><br><span class="line">\end&#123;split&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
 </li>
-<li><p>分类输入    {cases}参数<br>$$<br>\begin{equation}    a_{i1}A_{j1} + a_{i2}A_{j2} + \cdots + a_{in}A_{jn} =     \begin{cases}        \begin{vmatrix}A\end{vmatrix}，&amp; i =j\        0, &amp; i \neq j    \end{cases}\end{equation}<br>$$</p>
-</li>
+</ul>
+<p>  $$<br>  \begin{equation}<br>      \begin{split}<br>          (x + y)(x + 4y) &amp; = x^2 + 4xy + xy + 4y^2\<br>                  &amp; = x^2 +5xy + 4y^2<br>      \end{split}<br>  \end{equation}<br>  $$</p>
+<ul>
+<li>分类输入    {cases}参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">a_&#123;i1&#125;A_&#123;j1&#125; + a_&#123;i2&#125;A_&#123;j2&#125; + \cdots + a_&#123;in&#125;A_&#123;jn&#125; &#x3D;</span><br><span class="line">	\begin&#123;cases&#125;        </span><br><span class="line">		\begin&#123;vmatrix&#125;A\end&#123;vmatrix&#125;，&amp; i &#x3D;j\\</span><br><span class="line">        0, &amp; i \neq j    </span><br><span class="line">    \end&#123;cases&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>$$<br>\begin{equation}    a_{i1}A_{j1} + a_{i2}A_{j2} + \cdots + a_{in}A_{jn} =     \begin{cases}        \begin{vmatrix}A\end{vmatrix}，&amp; i =j\        0, &amp; i \neq j    \end{cases}\end{equation}<br>$$</li>
 </ul>
 <h2 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h2><ul>
 <li>$\neq$ <code>\neq</code></li>
@@ -51,45 +70,59 @@
 </li>
 <li>符号放在文本正下方<ul>
 <li>使用<code>$\underset$</code>，有时也可以使用<code>$\limits$</code></li>
-<li>$$\hat \beta = \underset{\beta}{\arg \min} L(\beta)$$ </li>
-<li>$$\hat \beta = \arg \min \limits_{\beta} L(\beta)$$</li>
+<li>$$\hat \beta = \underset{\beta}{\arg \min} L(\beta)$$ <ul>
+<li><code>$$\hat \beta = \underset{\beta}{\arg \min} L(\beta)$$</code></li>
+</ul>
+</li>
+<li>$$\hat \beta = \arg \min \limits_{\beta} L(\beta)$$<ul>
+<li><code>$$\hat \beta = \arg \min \limits_{\beta} L(\beta)$$</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h3 id="成正比"><a href="#成正比" class="headerlink" title="成正比"></a>成正比</h3><ul>
 <li>使用<code>$\propto$</code>来表示<ul>
-<li>$f(\beta|X) \propto f(\beta) f(X|\beta)$</li>
+<li>$f(\beta|X) \propto f(\beta) f(X|\beta)$<ul>
+<li><code>$f(\beta|X) \propto f(\beta) f(X|\beta)$</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--真包含--&gt; </span><br><span class="line">$$\subset$$ </span><br><span class="line">&lt;!--包含--&gt; </span><br><span class="line">$$\subseteq$$ </span><br><span class="line">&lt;!--属于和不属于--&gt; </span><br><span class="line">$$\in$$ $$\notin$$ </span><br><span class="line">&lt;!--交集和并集--&gt; </span><br><span class="line">$$\cap$$ </span><br><span class="line">$$\cup$$ </span><br><span class="line">&lt;!--其他--&gt; </span><br><span class="line">$$\mid$$ </span><br><span class="line">$$\supset$$</span><br></pre></td></tr></table></figure>
 
-<!--真包含--> $$\subset$$ 
+<!--真包含--> $$\subset$$  `$$\subset$$ `
 
-<!--包含--> $$\subseteq$$ 
+<!--包含--> $$\subseteq$$  `$$\subseteq$$ `
 
-<!--属于和不属于--> $$\in$$ $$\notin$$ 
+<!--属于和不属于--> $$\in$$ $$\notin$$  `$$\in$$` `$$\notin$$`
 
-<!--交集和并集--> $$\cap$$ $$\cup$$ 
+<!--交集和并集--> $$\cap$$ $$\cup$$  `$$\cap$$`  `$$\cup$$`
 
-<!--其他--> $$\mid$$  $$\supset$$
+<!--其他--> $$\mid$$  $$\supset $$   `$$\mid$$` `$$\supset $$`
 
 <h3 id="分式"><a href="#分式" class="headerlink" title="分式"></a>分式</h3><p><code>\frac{}{}</code>来表示分式，其中第一个<code>{}</code>表示分子，第二个<code>{}</code>表示分母</p>
-<p>$$\frac{1}{2}$$</p>
+<p>$$\frac{1}{2}$$ <code>$$\frac{1}{2}$$</code></p>
 <h3 id="根式"><a href="#根式" class="headerlink" title="根式"></a>根式</h3><p>使用<code>sqrt[]{}</code>来表示分式，其中<code>[]</code>表示开方的次数，<code>{}</code>表示被开方的公式</p>
-<p>$$\sqrt[3]{a+b}$$</p>
+<p>$$\sqrt[3]{a+b}$$ <code>$$\sqrt[3]{a+b}$$</code></p>
 <h3 id="求和和连乘"><a href="#求和和连乘" class="headerlink" title="求和和连乘"></a>求和和连乘</h3><ul>
 <li><p>求和 通常使用∑来表示，添加上下标<code>\sum_{}^{}</code></p>
 <p>$$\sum_{n=1}^{N}x_n$$</p>
+<p><code>$$\sum_{n=1}^{N}x_n$$</code></p>
 </li>
 <li><p>连乘 以<code>\prod_{}^{}</code>的形式表示$$\prod_{i = 1}^{N}x_i$$</p>
 <ul>
-<li>$\displaystyle\prod_{i = 1}^{n}x_i$  <code>\displaystyle</code></li>
+<li>$\displaystyle\prod_{i = 1}^{n}x_i$  <code>\displaystyle</code><ul>
+<li><code>$\displaystyle\prod_{i = 1}^{n}x_i$</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h3 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h3><ul>
 <li>使用<code>\lim</code> $\displaystyle\lim_{x \rightarrow + \infty}{\frac{sinx}{x}}$<ul>
+<li><code>$\displaystyle\lim_{x \rightarrow + \infty}{\frac{sinx}{x}}$</code></li>
 <li>右箭头→的表示方式为<code>$\rightarrow$</code>，左箭头←的表示方式是<code>$\leftarrow$</code></li>
 <li>正无穷+∞的表示方式为<code>$+ \infty$</code>，负无穷−∞的表示方式是<code>$- \infty$</code></li>
 </ul>
@@ -97,11 +130,17 @@
 </ul>
 <h3 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h3><ul>
 <li><code>\int_{}^{}</code><ul>
-<li>$$\int_{-\infty}^{+\infty}x^2$$</li>
+<li>$$\int_{-\infty}^{+\infty}x^2$$<ul>
+<li><code>$$\int_{-\infty}^{+\infty}x^2$$</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>正态分布的分布函数<ul>
-<li>$$F(x) = \int_{- \infty}^{+ \infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-(\frac{x-\mu}{\sigma})^2} dx$$</li>
+<li>$$F(x) = \int_{- \infty}^{+ \infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-(\frac{x-\mu}{\sigma})^2} dx$$<ul>
+<li><code>$$F(x) = \int_{- \infty}^{+ \infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-(\frac{x-\mu}{\sigma})^2} dx$$</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -110,13 +149,22 @@
 <li>$\sim$</li>
 </ul>
 </li>
-<li>$\varepsilon \sim N(0, \sigma^2I_n)$</li>
+<li>$\varepsilon \sim N(0, \sigma^2I_n)$<ul>
+<li><code>$\varepsilon \sim N(0, \sigma^2I_n)$</code></li>
+</ul>
+</li>
 </ul>
 <h3 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h3><ul>
-<li>使用<code>$\mathrm{d}$</code>来表示求导符号，<code>$\partial$</code>来表示求偏导<br>$$<br>\begin{align}<br>\frac {\mathrm{d}L(\beta)}{d\beta}\<!--直接用d来表示求导符的效果-->\\
-\frac {dL(\beta)}{d\beta}\<!--偏导-->\\
-\frac {\partial L(\beta_0, \beta_1)}{\partial \beta_0}<br>\end{align}<br>$$</li>
+<li>使用<code>$\mathrm{d}$</code>来表示求导符号，<code>$\partial$</code>来表示求偏导</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">	\frac &#123;\mathrm&#123;d&#125;L(\beta)&#125;&#123;d\beta&#125;\\</span><br><span class="line">	&lt;!--直接用d来表示求导符的效果--&gt;\\</span><br><span class="line">	\frac &#123;dL(\beta)&#125;&#123;d\beta&#125;\\</span><br><span class="line">	&lt;!--偏导--&gt;\\</span><br><span class="line">	\frac &#123;\partial L(\beta_0, \beta_1)&#125;&#123;\partial \beta_0&#125;</span><br><span class="line">\end&#123;align&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+<p>$$<br>\begin{align}<br>\frac {\mathrm{d}L(\beta)}{d\beta}\</p>
+<!--直接用d来表示求导符的效果-->\\
+<p>\frac {dL(\beta)}{d\beta}\</p>
+<!--偏导-->\\
+<p>\frac {\partial L(\beta_0, \beta_1)}{\partial \beta_0}<br>\end{align}<br>$$</p>
 <h3 id="垂直、平行"><a href="#垂直、平行" class="headerlink" title="垂直、平行"></a>垂直、平行</h3><ul>
 <li>垂直：使用<code>\perp</code>，效果为$\perp$</li>
 <li>平行：可以直接用<code>//</code>或$//$，也可以使用 $\parallel   $<code>$\parallel$</code></li>
@@ -192,27 +240,47 @@
 </ul>
 </li>
 </ul>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;array&#125;&#123;ccc&#125;</span><br><span class="line">	1 &amp; 0 &amp; 0\\</span><br><span class="line">    0 &amp; 1 &amp; 0\\</span><br><span class="line">    0 &amp; 0 &amp; 1\\</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
 <ul>
-<li>$$<br>\left(<pre><code>\begin{array}{ccc}
+<li><p>$$<br>\left(</p>
+<pre><code>\begin{array}{ccc}
 1 &amp; 0 &amp; 0000\\
 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 1\\
-\end{array}</code></pre>\right)<br>$$</li>
+\end{array}</code></pre><p>\right)<br>$$</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\left(    </span><br><span class="line">	\begin&#123;array&#125;&#123;ccc&#125;</span><br><span class="line">    	1 &amp; 0 &amp; 0000\\</span><br><span class="line">        0 &amp; 1 &amp; 0\\</span><br><span class="line">        0 &amp; 0 &amp; 1\\</span><br><span class="line">    \end&#123;array&#125;</span><br><span class="line">\right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
 </ul>
 <ul>
 <li><p>简化 <code>pmatrix</code>(带<code>()</code>的矩阵)、<code>bmatrix</code>(带<code>[]</code>的矩阵)、<code>vmatrix</code>(行列式)</p>
 <p>$$<br>\begin{pmatrix}<br>  1 &amp; 0 &amp; 0\<br>  0 &amp; 1 &amp; 0\<br>  0 &amp; 0 &amp; 1\<br>\end{pmatrix}<br>$$</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;pmatrix&#125;</span><br><span class="line">	1 &amp; 0 &amp; 0\\</span><br><span class="line">    0 &amp; 1 &amp; 0\\</span><br><span class="line">    0 &amp; 0 &amp; 1\\</span><br><span class="line">\end&#123;pmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
 </li>
 </ul>
 <ul>
 <li><p>复杂矩阵</p>
 <ul>
-<li>$$<br>A = <pre><code>\begin{pmatrix}
+<li><p>$$<br>A = </p>
+<pre><code>\begin{pmatrix}
     a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
     a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
     \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
     a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\
-\end{pmatrix}</code></pre>$$</li>
+\end{pmatrix}</code></pre><p>$$</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">A &#x3D;     </span><br><span class="line">\begin&#123;pmatrix&#125;        </span><br><span class="line">	a_&#123;11&#125; &amp; a_&#123;12&#125; &amp; \cdots &amp; a_&#123;1n&#125;\\</span><br><span class="line">    a_&#123;21&#125; &amp; a_&#123;22&#125; &amp; \cdots &amp; a_&#123;2n&#125;\\</span><br><span class="line">    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\</span><br><span class="line">    a_&#123;n1&#125; &amp; a_&#123;n2&#125; &amp; \cdots &amp; a_&#123;nn&#125;\\</span><br><span class="line">\end&#123;pmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
 </ul>
 </li>
 </ul>
@@ -225,10 +293,12 @@
 <li><p>$$<br>\begin{array}{l}</p>
 <pre><code>(A)\quad 2234 &amp; \hspace{4cm}(B)\quad 3\\
 (B)\quad 2 &amp; \hspace{4cm}(D)\quad 1</code></pre><p>\end{array}<br>$$</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;array&#125;&#123;l&#125;</span><br><span class="line">	(A)\quad 2234 &amp; \hspace&#123;4cm&#125;(B)\quad 3\\</span><br><span class="line">    (B)\quad 2 &amp; \hspace&#123;4cm&#125;(D)\quad 1</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><code>\quad</code>和<code>\hspace{}</code>都是表示空格，但是空的个数不同</li>
-</ul>
-</li>
 </ul>
 </div></article><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Latex/">Latex</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/2020/05/24/KaoYanJingYan-QQ/"><span>转载！复旦Q神致计算机跨考者</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(http://image.biaobaiju.com/uploads/20181223/20/1545567668-wtadReSbWc.png)"><div class="layout" id="footer"><div class="copyright">&copy;2020 By Moon</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="footer_custom_text">welcome to my <a href="https://yanyuefan.github.io">blog</a>!</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {
